@@ -1,0 +1,82 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* Draft */
+.tabs-container {
+    padding: 10px;
+  }
+  
+  .tabs {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .tab {
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: transparent;
+  }
+  
+  .tab.active {
+    background-color: #603998;
+    color: white;
+    border-bottom: none;
+    margin-bottom: -0.5px;
+    z-index: 11;
+    border-left: 1px solid rgba(233, 69, 208, 1);
+    border-right: 1px solid rgba(233, 69, 208, 1);
+    border-top: 1px solid rgba(233, 69, 208, 1);
+  }
+  
+  .content {
+    height: 85vh;
+    padding: 10px 0px 0px 0px;
+    border: 1px solid rgba(233, 69, 208, 1);
+    border-radius: 5px;
+  }
+  .add-button {
+    padding: 0px 20px 0px 20px;
+    background-color: rgba(233, 69, 208, 1);
+    box-shadow: 0px 8px 16px rgba(233, 69, 208, 1);
+    color: white;
+    margin-left: auto;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .arrow-left {
+    padding-right: 5px;
+  }
+  .arrow-right {
+    padding-left: 5px;
+  }
+  .arrow-button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: none;
+  }
+
+  .form-container {
+    padding: 20px;
+    border: 1px solid rgba(233, 69, 208, 1);
+    margin: 20px;
+    border-radius: 5px;
+    
+  }
+  .home-input-field {
+    background-color: white;
+    border-radius: 5px;
+  }

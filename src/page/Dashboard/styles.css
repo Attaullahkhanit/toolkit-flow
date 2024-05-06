@@ -1,0 +1,264 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container-gallery {
+  position: relative; /* Ensure positioning context for pseudo-elements */
+
+  /* Background Image 1 */
+  background-image: url('/src/Assets/rocket banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Other styling properties */
+  height: 100%;
+  color: white;
+  padding-top: 30px;
+}
+  .container-gallery::before {
+    content: ""; /* Required for pseudo-elements */
+    
+    /* Background Image 2 */
+    background-image: url('/src/Assets/Rectanglelayer.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Positioning and Layering */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Set a higher z-index to place it on top of the first image */
+}
+.container-gallery::after {
+  content: ""; /* Required for pseudo-elements */
+  
+  /* Background Image 3 */
+  background-image: url('/src/Assets/Group.png');
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  /* Positioning and Layering */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  z-index: 2; /* Set a higher z-index to place it on top of the first two images */
+}
+.container-gallery::after::after {
+  content: ""; /* Required for pseudo-elements */
+  
+  /* Background Image 4 */
+  background-image: url('/src/Assets/Group2.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  /* Positioning and Layering */
+  position: absolute;
+  top: 50%; /* Adjust the top position to place it between center and bottom */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center vertically */
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  z-index: 3; /* Set a higher z-index to place it on top of the previous images */
+}
+
+  .left-side-bar {
+    position: relative;
+    padding-top: 60px;
+    /* height: 100vh; */
+    overflow-y: hidden;
+    padding-right: 30px;
+
+  }
+  .logo {
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .icon {
+    padding-right: 8px;
+  }
+  .menu-item-breakfast {
+    display: flex;
+    align-items: start;
+  }
+  .divider {
+    width: 100%;
+    color: white;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  }
+  .icon:hover {
+    color: rgba(233, 69, 208, 1);
+  }
+  
+  .bottom-menu-item {
+    margin-top: auto;
+  }
+  .menu-item-credit {
+    width: 100%;
+  }
+  .menu-list-item {
+    width: 100%;
+    cursor: pointer;
+  }
+  .middle {
+    margin-top:10px;
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+  }
+  .bar-4 {
+    width: 43.75%;
+    height: 8px; 
+    background-color:rgba(233, 69, 208, 1);
+    border-radius: 5px;
+}
+  .credit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-top: 3px;
+    width: 100%;
+  }
+  .menu-item-manage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .name {
+    cursor: pointer;
+  }
+  .top-bar {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .right-top-bar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  .menu-item-credit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .search-input {
+    border-radius: 10px;
+    border: none;
+    background-color: dark;
+    color: white;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid none;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .search-button {
+    background: #3E2C5F;
+    border: none;
+    border-radius: 20px 0px 0px 20px;
+    padding: 6px 2px 2px 10px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  
+  input {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    background-color: #3D2C5E;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    background: linear-gradient(to right,#3E2C5F, #26193d);
+  }
+  input:focus{
+    outline: none;
+    border-color: #007bff;
+  }
+  .notification-button {
+    background: linear-gradient(to right,#3E2C5F, #26193d);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 13px;
+    cursor: pointer;
+    margin:0px 4px 0px 4px;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+  .notification-container .notification-button {
+    background: linear-gradient(to right,#3E2C5F, #26193d);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 13px;
+    cursor: pointer;
+    margin:0px 4px 0px 4px;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+  .centered-container {
+    text-align: center;
+  }
+  .robotic-content {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right,#3E2C5F, #26193d);
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+
+  }
+  
+  .robotic-icon {
+    color: white;
+    margin-right: 4px;
+  }
+  
+  .robotic-name {
+    color: white;
+  }
+  .right-side-section {
+    position: relative;
+    z-index: 6;
+    /* padding: 20px; */
+    padding: 0px 20px 20px 0px;
+  }
+  .main-container {
+     width: 100%;
+     margin-right: 20px;
+     margin-top: 30px;
+     height: 100vh;
+     background: linear-gradient(to bottom, #61399A 0%, #1E162E 100%);
+     border-radius: 10px;
+     border: 1px solid rgba(233, 69, 208, 1);
+  }

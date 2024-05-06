@@ -1,0 +1,26 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.menu {
+    position: relative;
+    z-index: 5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menu-list-item:hover{
+    background-color: white;
+    color: rgba(233, 69, 208, 1);
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0px 8px 16px rgba(233, 69, 208, 1);
+  }
+  .List-Item:hover{
+        background-color: white;
+        color: rgba(233, 69, 208, 1);
+        border-radius: 0px 20px 20px 0px;
+        box-shadow: 0px 8px 16px rgba(233, 69, 208, 1);
+  }
